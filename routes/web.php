@@ -18,6 +18,7 @@ Route::get('/', function () {
     $messaggioArray = [
         'message' => 'Metodo 1 : Hello laravel passato con l\'array'
     ];
+    $messaggioCompact = 'Metodo 2 : Hello Laravel con la funzione compact';
     // restituisco il messaggio
-    return view('home', $messaggioArray);
+    return view('home', $messaggioArray, compact('messaggioCompact'));
 });

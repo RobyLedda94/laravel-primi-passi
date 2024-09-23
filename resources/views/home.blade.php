@@ -8,5 +8,6 @@
 <body>
     <h1>Hello Laravel</h1>
     <p>{{ $message }}</p>
+    <p> {{ $messaggioCompact }}</p>
 </body>
 </html>
