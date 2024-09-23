@@ -6,6 +6,7 @@
     <title>Laravel</title>
 </head>
 <body>
-    <p>Hello Laravel</p>
+    <h1>Hello Laravel</h1>
+    <p>{{ $message }}</p>
 </body>
 </html>

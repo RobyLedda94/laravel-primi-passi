@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    // creo array e passo la chiave al file home.blade.php
+    $messaggioArray = [
+        'message' => 'Metodo 1 : Hello laravel passato con l\'array'
+    ];
+    // restituisco il messaggio
+    return view('home', $messaggioArray);
 });
